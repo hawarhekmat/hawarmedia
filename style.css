@@ -9,19 +9,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-color: #2d2d30;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  height: 100svh;
-}
-
-body h1 {
-  color: #fff;
-}
-
 .warning {
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
