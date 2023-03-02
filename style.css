@@ -9,6 +9,53 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #2d2d30;
+}
+
+.introduction {
+  text-align: center;
+  height: 100vh;
+  height: 100svh;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2d2d30;
+  color: #fff;
+  padding: 1rem;
+}
+
+.introduction .button {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #2d2d30;
+}
+
+.introduction .copyright {
+  margin: 1rem 0;
+}
+
+.introduction img {
+  height: 25%;
+}
+
+.introduction a {
+  color: #fff;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
+.introduction h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.introduction p {
+  font-size: 1.2rem;
+}
+
 .warning {
   display: none;
   background-color: rgba(0, 0, 0, 0.5);

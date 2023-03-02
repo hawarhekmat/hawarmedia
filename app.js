@@ -1,4 +1,7 @@
 const warning = document.querySelector(".warning");
+const copyRight = document.querySelector(".copyright span");
+
+const year = new Date().getFullYear();
 
 window.addEventListener("DOMContentLoaded", () => {
   const showWarning = localStorage.getItem("showWarning");
@@ -11,3 +14,5 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+copyRight.textContent = year;
