@@ -30,6 +30,12 @@
         >کردنەوەی ڤیدیۆ</a
       >
       <small>تێبینی: ئەم ڤیدیۆیە لە گووگل درایڤ هۆست کراوە</small>
+      <a
+        href="https://github.com/hawarhekmat/flutter_chat_app"
+        target="_blank"
+        class="code"
+        >سەرچاوەی کۆد</a
+      >
       <p class="copyright">Copyright &copy; <span></span> Hawar Media</p>
     </section>
     <section class="warning">
@@ -41,5 +47,29 @@
         </div>
       </div>
     </section>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+      import {
+        getAnalytics,
+        logEvent,
+      } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCeMiftIevHof4JcEpffzm8aw2C4xRRj7c",
+        authDomain: "hawar-media.firebaseapp.com",
+        projectId: "hawar-media",
+        storageBucket: "hawar-media.appspot.com",
+        messagingSenderId: "312209538361",
+        appId: "1:312209538361:web:08aa15bc71ef6c308dbce8",
+        measurementId: "G-5TTYH79DN2",
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      document.querySelector(".button").addEventListener("click", () => {
+        console.log("creating event");
+        logEvent(analytics, "flutter_chat_app_video_opened");
+      });
+    </script>
   </body>
 </html>
